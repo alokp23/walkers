@@ -57,7 +57,7 @@ export default function Hero() {
             Introducing Levitate Foam
           </motion.div>
 
-          <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold tracking-tighter leading-[1.1] mb-6 text-gradient drop-shadow-2xl">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tighter leading-[1.1] mb-6 text-gradient drop-shadow-2xl">
             Defy gravity.<br />
             Every step.
           </h1>
@@ -66,18 +66,18 @@ export default function Hero() {
             Engineered for all-day comfort. Our proprietary cell-structure midsole absorbs impact and returns energy instantly, giving you a visible lift.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
             <motion.button 
               whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(59, 130, 246, 0.5)" }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[var(--color-primary)] text-[var(--color-background)] px-8 py-4 rounded-xl font-semibold text-lg transition-colors hover:opacity-90"
+              className="w-full sm:w-auto bg-[var(--color-primary)] text-[var(--color-background)] px-8 py-4 rounded-xl font-semibold text-lg transition-colors hover:opacity-90"
             >
               Shop the Drop
             </motion.button>
             <motion.button 
               whileHover={{ scale: 1.05, backgroundColor: "var(--glass-bg)" }}
               whileTap={{ scale: 0.95 }}
-              className="glass-panel text-[var(--color-primary)] px-8 py-4 rounded-xl font-semibold text-lg transition-colors"
+              className="w-full sm:w-auto glass-panel text-[var(--color-primary)] px-8 py-4 rounded-xl font-semibold text-lg transition-colors"
             >
               Tech Specs
             </motion.button>

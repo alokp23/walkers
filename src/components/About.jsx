@@ -9,7 +9,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="glass-panel p-10 sm:p-16 relative overflow-hidden"
+          className="glass-panel p-6 sm:p-10 lg:p-16 relative overflow-hidden"
         >
           {/* Subtle inner gradient */}
           <div className="absolute top-0 right-0 w-64 h-64 blur-[100px] rounded-full opacity-20" style={{ backgroundColor: 'var(--color-accent)' }} />
@@ -17,7 +17,7 @@ export default function About() {
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="max-w-xl">
               <h2 className="text-sm font-bold tracking-widest text-[var(--color-accent)] uppercase mb-4">The Philosophy</h2>
-              <h3 className="text-3xl sm:text-5xl font-medium leading-tight mb-8 text-primary">
+              <h3 className="text-2xl sm:text-4xl lg:text-5xl font-medium leading-tight mb-6 sm:mb-8 text-primary">
                 We stripped away the fabric to show you exactly what you're stepping on. No air bubbles, no gimmicks.
               </h3>
               <p className="text-lg text-secondary leading-relaxed">

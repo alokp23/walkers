@@ -7,7 +7,7 @@ export default function Navbar({ theme, toggleTheme }) {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-2xl glass-panel px-6 py-3 flex items-center justify-between"
+      className="fixed top-4 sm:top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] sm:w-[90%] max-w-2xl glass-panel px-4 sm:px-6 py-3 flex items-center justify-between"
     >
       <div className="font-bold text-xl tracking-tight text-[var(--color-primary)]">
         Walkers
