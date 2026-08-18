@@ -84,20 +84,20 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* 3D Floating Sneaker */}
+        {/* Floating Sneaker Photo */}
         <motion.div 
-          className="relative h-[400px] sm:h-[500px] lg:h-[600px] w-full flex items-center justify-center pointer-events-none"
+          className="relative h-[400px] sm:h-[500px] lg:h-[600px] w-full rounded-3xl overflow-hidden glass-panel pointer-events-none shadow-2xl"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          style={{ x: imgTranslateX, y: imgTranslateY, rotateX, rotateY: useTransform(smoothX, [-0.5, 0.5], [10, -10]) }}
+          style={{ x: imgTranslateX, y: imgTranslateY }}
         >
           <img 
             src="/sneaker.jpg" 
             alt="Walkers Sneaker"
-            className="w-full h-full object-contain object-center drop-shadow-2xl"
-            style={{ filter: 'drop-shadow(0 40px 50px rgba(0, 0, 0, 0.6))' }}
+            className="absolute inset-0 w-full h-full object-cover object-center"
           />
+          <div className="absolute inset-0 border border-white/10 rounded-3xl pointer-events-none" />
         </motion.div>
 
       </div>
