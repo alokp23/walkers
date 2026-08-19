@@ -91,8 +91,22 @@ export default function Features() {
   ];
 
   return (
-    <section id="features" className="py-24 w-full flex justify-center px-4">
-      <div className="max-w-6xl w-full">
+    <section id="features" className="py-24 w-full flex justify-center px-4 relative overflow-hidden">
+      
+      {/* Huge Background Typography (Fizzi-style) */}
+      <motion.div 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none z-0"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 0.05, x: 0 }}
+        viewport={{ once: false, margin: "-100px" }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+      >
+        <h2 className="text-[12rem] md:text-[20rem] font-black tracking-tighter whitespace-nowrap text-primary uppercase leading-none mix-blend-overlay">
+          Performance
+        </h2>
+      </motion.div>
+
+      <div className="max-w-6xl w-full relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, i) => (
             <FeatureCard key={i} {...feature} delay={i * 0.15} />
